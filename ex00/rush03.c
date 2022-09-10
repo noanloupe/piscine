@@ -6,7 +6,7 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 11:02:14 by noloupe           #+#    #+#             */
-/*   Updated: 2022/09/10 14:17:32 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/09/10 16:35:49 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,12 @@ void	rush(int x, int y)
 	line = 1;
 	while (line <= y)
 	{
-		if (line == 1 || line == y)
-		{
+		if (line == 1)
 			ft_print_col('A', 'C', 'B', x);
-		}
+		else if (line == y)
+			ft_print_col('A', 'C', 'B', x);
 		else
-		{
 			ft_print_col('B', 'B', ' ', x);
-		}
 		line++;
 		ft_putchar('\n');
 	}
